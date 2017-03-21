@@ -4,6 +4,12 @@ body {
   overflow-x: hidden;
   background-color: #11749e;
 }
+a:active,
+a:visited,
+a:focus {
+  text-decoration: none;
+  color: #f5f5f5;
+}
 input,
 textarea {
   background-color: transparent;
@@ -11,6 +17,7 @@ textarea {
   padding-left: 20px;
   color: #f5f5f5;
   font-size: 16px;
+  outline: none;
 }
 input {
   width: 350px;
@@ -216,6 +223,10 @@ footer {
   background: url(../img/pages-2.jpg) no-repeat center center;
   background-size: cover;
 }
+#line {
+  height: 30vh;
+  background-color: #11749e;
+}
 .blog-title {
   margin-top: 12%;
 }
@@ -417,8 +428,11 @@ footer {
   text-align: right;
 }
 @media (min-width: 1600px) {
+  .main-header-name {
+    margin-top: 15%;
+  }
   .main-header-name .scroll-next {
-    margin-top: 25%;
+    margin-top: 20%;
     font-size: 16px;
   }
   .main-header-name .scroll-next-arr {
@@ -433,8 +447,25 @@ footer {
   .pages-title {
     margin-top: 20%;
   }
-  .pages-title h2 {
-    font-size: 48px;
+  #blog {
+    height: 100vh;
+  }
+  .akita-title,
+  .akita-img {
+    margin-top: 20%;
+  }
+  #team {
+    height: 100vh;
+  }
+  .team-item {
+    margin-top: 10%;
+  }
+  .contact-title {
+    margin-top: 15%;
+  }
+  .contact-form-btn {
+    width: 100%;
+    margin-top: 25%;
   }
 }
 .signature {

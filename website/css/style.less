@@ -23,12 +23,17 @@ body{
 	overflow-x: hidden;
 	background-color: @base-blue;
 }
+a:active, a:visited, a:focus{
+	text-decoration: none;
+	color: @base-text;
+}
 input, textarea{
 	background-color: transparent;
 	padding: auto 20px;
 	padding-left: 20px;
 	color: @base-text;
 	font-size: 16px;
+	outline: none;
 }
 input{
 	width: 350px;
@@ -241,6 +246,11 @@ footer{
 	height: 65vh;
 	background: url(../img/pages-2.jpg) no-repeat center center;
 	background-size: cover;
+}
+///////////////////////////////    LINE SECTION    ////////////////////////////////////////
+#line{
+	height: 30vh;
+	background-color: @base-blue;
 }
 //////////////////////////   BLOG SECTION  //////////////////////////////////
 .blog{
@@ -479,8 +489,11 @@ footer{
 
 }
 @media (min-width: 1600px){
+	.main-header-name{
+		margin-top: 15%;
+	}
 	.main-header-name .scroll-next {
-		margin-top: 25%;
+		margin-top: 20%;
 		font-size: 16px;
 		&-arr{
 			height: 96px;
@@ -495,8 +508,32 @@ footer{
 		}
 		&-title{
 			margin-top: 20%;
-			h2{
-				font-size: 48px;
+		}
+	}
+	#blog{
+		height: 100vh;
+	}
+	.akita{
+		&-title, &-img{
+			margin-top: 20%;
+		}
+	}
+	#team{
+		height: 100vh;
+	}
+	.team{
+		&-item{
+			margin-top: 10%;
+		}
+	}
+	.contact{
+		&-title{
+			margin-top: 15%;
+		}
+		&-form{
+			&-btn{
+				width: 100%;
+				margin-top: 25%;
 			}
 		}
 	}
