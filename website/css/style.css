@@ -416,6 +416,27 @@ footer {
   font-size: 20px;
   text-align: right;
 }
+@media (min-width: 1600px) {
+  .main-header-name .scroll-next {
+    margin-top: 25%;
+    font-size: 16px;
+  }
+  .main-header-name .scroll-next-arr {
+    height: 96px;
+    width: 96px;
+    padding-top: 20px;
+    font-size: 30px;
+  }
+  .pages-item {
+    margin-top: 20%;
+  }
+  .pages-title {
+    margin-top: 20%;
+  }
+  .pages-title h2 {
+    font-size: 48px;
+  }
+}
 .signature {
   opacity: 0;
   position: absolute;
